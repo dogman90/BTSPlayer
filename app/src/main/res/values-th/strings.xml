@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--태국어-->
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">แชร์แอพ</string>
+    <string name="muvie">มิวสิกวิดีโอ</string>
+    <string name="live">การแสดงสด</string>
+    <string name="vlog">V บันทึก</string>
+    <string name="favorites">รายการโปรด</string>
+    <string name="addFav">เพิ่มในรายการโปรด</string>
+    <string name="delFav">ลบออกจากรายการโปรด</string>
+    <string name="favAddMsg">เพิ่มในรายการโปรด</string>
+    <string name="favDelMsg">นำออกจากรายการโปรด</string>
+    <string name="favAlreadyMsg">มีอยู่แล้วในรายการโปรด</string>
+    <string name="toHome">กลับสู่หน้าหลัก</string>
+    <string name="shareAppLink">แชร์ลิงก์ดาวน์โหลดแอป</string>
+    <string name="prevVideo">◀ ก่อน</string>
+    <string name="nextVideo">▶ ต่อไป</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">ลบโฆษณา</string>
+</resources>

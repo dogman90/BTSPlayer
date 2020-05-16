@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--타갈로그어(필리핀)-->
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">ibahagi ang app</string>
+    <string name="muvie">video ng musika</string>
+    <string name="live">live na pagganap</string>
+    <string name="vlog">V LOG</string>
+    <string name="favorites">mga paborito</string>
+    <string name="addFav">Idagdag sa mga Paborito</string>
+    <string name="delFav">alisin sa mga paborito</string>
+    <string name="favAddMsg">idinagdag sa mga paborito</string>
+    <string name="favDelMsg">Inalis mula sa mga paborito</string>
+    <string name="favAlreadyMsg">na nasa mga paborito</string>
+    <string name="toHome">bumalik sa pangunahing</string>
+    <string name="shareAppLink">Ibahagi ang link sa pag-download ng app</string>
+    <string name="prevVideo">◀ nakaraan</string>
+    <string name="nextVideo">▶ susunod</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">Alisin ang Mga Patalastas</string>
+</resources>

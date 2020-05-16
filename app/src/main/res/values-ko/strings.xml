@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">내비게이션 바 열기</string>
+    <string name="navigation_drawer_close">내비게이션 파 닫기</string>
+    <string name="share">앱 공유하기</string>
+    <string name="muvie">뮤직비디오</string>
+    <string name="live">라이브</string>
+    <string name="vlog">V로그</string>
+    <string name="favorites">내 재생목록</string>
+    <string name="addFav">즐겨찾기 추가</string>
+    <string name="delFav">즐겨찾기 제거</string>
+    <string name="favAddMsg">재생목록에 추가되었습니다</string>
+    <string name="favDelMsg">재생목록에서 제거되었습니다</string>
+    <string name="favAlreadyMsg">이미 재생목록에 있습니다</string>
+    <string name="toHome">목록으로 가기</string>
+    <string name="shareAppLink">앱 다운 링크 공유</string>
+    <string name="prevVideo">◀ 이전</string>
+    <string name="nextVideo">▶ 다음</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">광고 제거</string>
+</resources>

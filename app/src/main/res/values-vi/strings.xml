@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--베트남어-->
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">chia sẻ ứng dụng</string>
+    <string name="muvie">video âm nhạc</string>
+    <string name="live">biểu diễn trực tiếp</string>
+    <string name="vlog">nhật ký v</string>
+    <string name="favorites">yêu thích</string>
+    <string name="addFav">thêm vào mục yêu thích</string>
+    <string name="delFav">loại bỏ khỏi mục ưa thích</string>
+    <string name="favAddMsg">thêm vào mục yêu thích</string>
+    <string name="favDelMsg">xóa khỏi mục yêu thích</string>
+    <string name="favAlreadyMsg">đã được yêu thích</string>
+    <string name="toHome">về vấn đề chính</string>
+    <string name="shareAppLink">chia sẻ liên kết tải xuống ứng dụng</string>
+    <string name="prevVideo">◀ Trước</string>
+    <string name="nextVideo">▶ kế tiếp</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">Loại bỏ các quảng cáo</string>
+</resources>

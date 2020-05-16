@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--포르투갈어(브라질)-->
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">compartilhe o aplicativo</string>
+    <string name="muvie">vídeo de música</string>
+    <string name="live">espetáculo ao vivo</string>
+    <string name="vlog">V LOG</string>
+    <string name="favorites">My favoritas</string>
+    <string name="addFav">Tadicionar aos favoritas</string>
+    <string name="delFav">Remover dos favoritas</string>
+    <string name="favAddMsg">adicionado aos favoritas</string>
+    <string name="favDelMsg">removido dos favoritas</string>
+    <string name="favAlreadyMsg">já nos meus favoritas</string>
+    <string name="toHome">de volta ao principal</string>
+    <string name="shareAppLink">compartilhar link de download do aplicativo</string>
+    <string name="prevVideo">◀ anterior</string>
+    <string name="nextVideo">▶ próxima</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">Remover propagandas</string>
+</resources>

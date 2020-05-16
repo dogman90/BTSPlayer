@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--중국어-->
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">分享应用</string>
+    <string name="muvie">音乐视频</string>
+    <string name="live">现场表演</string>
+    <string name="vlog">V LOG</string>
+    <string name="favorites">我最喜爱的</string>
+    <string name="addFav">添加到收藏夹</string>
+    <string name="delFav">从收藏夹中删除</string>
+    <string name="favAddMsg">添加到我的收藏夹</string>
+    <string name="favDelMsg">从我的收藏中删除</string>
+    <string name="favAlreadyMsg">已经在我的最爱</string>
+    <string name="toHome">回到主要</string>
+    <string name="shareAppLink">分享应用下载链接</string>
+    <string name="prevVideo">◀ 以前</string>
+    <string name="nextVideo">▶ 下一个</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">移除广告</string>
+</resources>

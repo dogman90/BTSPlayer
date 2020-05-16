@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">アプリ共有</string>
+    <string name="muvie">ミュージックビデオ</string>
+    <string name="live">ライブ</string>
+    <string name="vlog">Vログ</string>
+    <string name="favorites">お気に入り</string>
+    <string name="addFav">お気に入りに追加</string>
+    <string name="delFav">お気に入りから削除</string>
+    <string name="favAddMsg">お気に入りに追加</string>
+    <string name="favDelMsg">お気に入りから削除</string>
+    <string name="favAlreadyMsg">すでにお気に入りにある</string>
+    <string name="toHome">メインに戻る</string>
+    <string name="shareAppLink">アプリのダウンロードリンクを共有</string>
+    <string name="prevVideo">◀ 前</string>
+    <string name="nextVideo">▶ 次</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">広告を削除</string>
+</resources>

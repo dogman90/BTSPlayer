@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--인도네시아-->
+<resources>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="share">Bagikan Aplikasi</string>
+    <string name="muvie">video musik</string>
+    <string name="live">penampilan langsung</string>
+    <string name="vlog">V LOG</string>
+    <string name="favorites">favorit</string>
+    <string name="addFav">Tambahkan ke Favorit</string>
+    <string name="delFav">Hapus dari favorit</string>
+    <string name="favAddMsg">Ditambahkan ke favorit saya</string>
+    <string name="favDelMsg">Dihapus dari favorit</string>
+    <string name="favAlreadyMsg">Sudah di favorit saya</string>
+    <string name="toHome">kembali ke utama</string>
+    <string name="shareAppLink">Bagikan tautan unduh aplikasi</string>
+    <string name="prevVideo">◀ sebelumnya</string>
+    <string name="nextVideo">▶ berikutnya</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="remove_ad">Hilangkan iklan</string>
+</resources>
