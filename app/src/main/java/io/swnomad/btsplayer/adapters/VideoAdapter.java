@@ -2,8 +2,6 @@ package io.swnomad.btsplayer.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +20,7 @@ import java.util.ArrayList;
 import io.swnomad.btsplayer.PipActivity;
 import io.swnomad.btsplayer.R;
 import io.swnomad.btsplayer.VideoItem;
+import io.swnomad.btsplayer.datahandlers.SQLiteHandler;
 
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.MyViewHolder> {
 
@@ -51,22 +50,13 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.MyViewHolder
                     String pubDate = video.getDate();
                     String thumbnailUrl = video.getThumbnailUrl();
 
-                    SQLiteDatabase db = mContext.openOrCreateDatabase("favorites",
-                            Context.MODE_ENABLE_WRITE_AHEAD_LOGGING, null);
-
-                    String sql1 = "select * from videos where videoId=" + "'" + videoId + "'";
-                    Cursor cursor = db.rawQuery(sql1, null);
-
-                    if (cursor.getCount() <= 0) {
-                        String sql = "insert into videos(title, videoId, pubDate, thumbnailUrl) " +
-                                "values(" + "\"" + title + "\"," + "'" + videoId + "'," + "'" + pubDate + "'," + "'" + thumbnailUrl + "');";
-                        db.execSQL(sql);
+                    boolean success = SQLiteHandler.getInstance(mContext).addToFavorites(videoId, title, pubDate, thumbnailUrl);
+                    if(success) {
                         Snackbar.make(v, R.string.favAddMsg, Snackbar.LENGTH_SHORT).show();
                     } else {
                         Snackbar.make(v, R.string.favAlreadyMsg, Snackbar.LENGTH_SHORT).show();
                     }
 
-                    db.close();
                 }
             });
 

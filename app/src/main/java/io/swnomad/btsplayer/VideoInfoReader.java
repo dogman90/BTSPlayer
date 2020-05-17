@@ -10,28 +10,57 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class VideoInfoReader {
 
-    private static final String muvieUrl = "https://nobbaggu.github.io/assets/rss_feed/feed_bts_muvie.json";
-    private static final String liveUrl = "https://nobbaggu.github.io/assets/rss_feed/feed_bts_live.json";
-    private static final String vlogUrl = "https://nobbaggu.github.io/assets/rss_feed/feed_bts_log.json";
+    private static VideoInfoReader instance;
 
-    private static String muvieJsonText;
-    private static String liveJsonText;
-    private static String vlogJsonText;
+    private final String muvieUrl = "https://nobbaggu.github.io/assets/rss_feed/feed_bts_muvie.json";
+    private final String liveUrl = "https://nobbaggu.github.io/assets/rss_feed/feed_bts_live.json";
+    private final String vlogUrl = "https://nobbaggu.github.io/assets/rss_feed/feed_bts_log.json";
 
-    public static void load() {
+    private String muvieJsonText;
+    private String liveJsonText;
+    private String vlogJsonText;
+
+    private HashMap<String, VideoItem> muvieItems;
+    private HashMap<String, VideoItem> liveItems;
+    private HashMap<String, VideoItem> vlogItems;
+
+    public static VideoInfoReader getInstance() {
+        if(instance == null) {
+            instance = new VideoInfoReader();
+        }
+        return instance;
+    }
+
+    private VideoInfoReader() {
+        init();
+    }
+
+    private void init() {
+        muvieItems = new HashMap<>();
+        liveItems = new HashMap<>();
+        vlogItems = new HashMap<>();
+
+        load();
+    }
+
+    private void load() {
         muvieJsonText = loadJsonText(muvieUrl);
         liveJsonText = loadJsonText(liveUrl);
         vlogJsonText = loadJsonText(vlogUrl);
+
+        loadMuvieItems();
+        loadLiveItems();
+        loadVlogItems();
     }
 
-    private static String loadJsonText(final String urlString) {
+    private String loadJsonText(final String urlString) {
         final String[] jsonText = new String[1];
 
         Runnable runnable = new Runnable() {
@@ -76,7 +105,7 @@ public class VideoInfoReader {
         service.execute(runnable);
         service.shutdown();
         try {
-            service.awaitTermination(1000, TimeUnit.MILLISECONDS);
+            service.awaitTermination(10000, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -84,9 +113,7 @@ public class VideoInfoReader {
         return jsonText[0];
     }
 
-    public static ArrayList<VideoItem> getMuvieItems() {
-        ArrayList<VideoItem> items = new ArrayList<>();
-
+    private void loadMuvieItems() {
 
         try {
             JSONArray jsonArray = new JSONArray(muvieJsonText);
@@ -97,17 +124,15 @@ public class VideoInfoReader {
                 String addedDate = item.getString("addedDate");
                 String thumbnailUrl = item.getString("picture");
 
-                items.add(new VideoItem(title, addedDate, id, thumbnailUrl));
+                muvieItems.put(id, new VideoItem(title, addedDate, id, thumbnailUrl));
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        return items;
     }
 
-    public static ArrayList<VideoItem> getLiveItems() {
-        ArrayList<VideoItem> items = new ArrayList<>();
+    private void loadLiveItems() {
 
         try {
             JSONArray jsonArray = new JSONArray(liveJsonText);
@@ -118,17 +143,14 @@ public class VideoInfoReader {
                 String addedDate = item.getString("addedDate");
                 String thumbnailUrl = item.getString("picture");
 
-                items.add(new VideoItem(title, addedDate, id, thumbnailUrl));
+                liveItems.put(id, new VideoItem(title, addedDate, id, thumbnailUrl));
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-        return items;
     }
 
-    public static ArrayList<VideoItem> getVlogItems() {
-        ArrayList<VideoItem> items = new ArrayList<>();
+    private void loadVlogItems() {
         try {
             JSONArray jsonArray = new JSONArray(vlogJsonText);
             for(int i = 0; i < jsonArray.length(); i++) {
@@ -138,12 +160,34 @@ public class VideoInfoReader {
                 String addedDate = item.getString("addedDate");
                 String thumbnailUrl = item.getString("picture");
 
-                items.add(new VideoItem(title, addedDate, id, thumbnailUrl));
+                vlogItems.put(id, new VideoItem(title, addedDate, id, thumbnailUrl));
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
 
-        return items;
+    public HashMap<String, VideoItem> getMuvieItems() {
+        return muvieItems;
+    }
+
+    public HashMap<String, VideoItem> getLiveItems() {
+        return liveItems;
+    }
+
+    public HashMap<String, VideoItem> getVlogItems() {
+        return vlogItems;
+    }
+
+    public int getMuvieItemsSize() {
+        return muvieItems.size();
+    }
+
+    public int getLiveItemsSize() {
+        return liveItems.size();
+    }
+
+    public int getVlogItemsSize() {
+        return vlogItems.size();
     }
 }

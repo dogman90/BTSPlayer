@@ -1,7 +1,6 @@
 package io.swnomad.btsplayer.fragments;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,28 +11,22 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.ads.InterstitialAd;
-
 import java.util.ArrayList;
 
 import io.swnomad.btsplayer.R;
 import io.swnomad.btsplayer.VideoItem;
-import io.swnomad.btsplayer.adapters.VideoAdapter;
 
 
 public abstract class VideoFragment extends Fragment {
 
-    private VideoAdapter adapter;
+    RecyclerView.Adapter adapter;
 
-    private Handler handler = new Handler();
-
-    private InterstitialAd mInterstitialAd;
+    RecyclerView recyclerView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ArrayList<VideoItem> videoItems = getVideoItems();
-        adapter = new VideoAdapter(getContext(), videoItems);
+        adapter = getAdapter();
     }
 
     @Nullable
@@ -59,7 +52,7 @@ public abstract class VideoFragment extends Fragment {
         AdRequest adRequest = new AdRequest.Builder().build();
         bannerAdView.loadAd(adRequest);*/
 
-        RecyclerView recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView = rootView.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         recyclerView.setAdapter(adapter);
@@ -71,4 +64,5 @@ public abstract class VideoFragment extends Fragment {
 
     public abstract ArrayList<VideoItem> getVideoItems();
 
+    public abstract RecyclerView.Adapter getAdapter();
 }

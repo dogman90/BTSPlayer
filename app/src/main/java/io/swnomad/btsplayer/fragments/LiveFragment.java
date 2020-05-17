@@ -3,15 +3,16 @@ package io.swnomad.btsplayer.fragments;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
 import io.swnomad.btsplayer.R;
-import io.swnomad.btsplayer.VideoInfoReader;
 import io.swnomad.btsplayer.VideoItem;
+import io.swnomad.btsplayer.adapters.VideoAdapter;
+import io.swnomad.btsplayer.datahandlers.SQLiteHandler;
 
 public class LiveFragment extends VideoFragment {
-
-    VideoInfoReader reader = new VideoInfoReader();
 
     @Override
     public ViewGroup inflate(LayoutInflater inflater, ViewGroup container) {
@@ -20,6 +21,11 @@ public class LiveFragment extends VideoFragment {
 
     @Override
     public ArrayList<VideoItem> getVideoItems() {
-        return VideoInfoReader.getLiveItems();
+        return SQLiteHandler.getInstance(getContext()).getLiveItems();
+    }
+
+    @Override
+    public RecyclerView.Adapter getAdapter() {
+        return new VideoAdapter(getContext(), getVideoItems());
     }
 }

@@ -5,10 +5,10 @@ import android.os.Parcelable;
 
 public class VideoItem implements Parcelable {
 
-    String title;
-    String date;
-    String video_id;
-    String thumbnailUrl;
+    private String title;
+    private String date;
+    private String video_id;
+    private String thumbnailUrl;
 
     public VideoItem(String title, String date, String video_id, String thumbnailUrl) {
         this.title = title;

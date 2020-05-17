@@ -2,7 +2,6 @@ package io.swnomad.btsplayer.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,13 +20,12 @@ import java.util.ArrayList;
 import io.swnomad.btsplayer.PipActivity;
 import io.swnomad.btsplayer.R;
 import io.swnomad.btsplayer.VideoItem;
+import io.swnomad.btsplayer.datahandlers.SQLiteHandler;
 
 public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MyViewHolder> {
 
     private Context mContext;
     private ArrayList<VideoItem> mFavoriteList;
-
-    private VideoItem singleVideo;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -51,15 +49,11 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MyView
                     String videoId = video.getVideoId();
 
                     mFavoriteList.remove(getAdapterPosition());
+                    SQLiteHandler.getInstance(mContext).deleteFromFavorites(videoId);
 
-                    SQLiteDatabase db = mContext.openOrCreateDatabase("favorites",
-                            Context.MODE_ENABLE_WRITE_AHEAD_LOGGING,null);
-                    String[] whereArgs = {videoId};
-                    db.delete("videos", "videoId = ?", whereArgs);
-                    db.close();
+                    Snackbar.make(v, R.string.favDelMsg, Snackbar.LENGTH_SHORT).show();
 
                     notifyDataSetChanged();
-                    Snackbar.make(v, R.string.favDelMsg, Snackbar.LENGTH_SHORT).show();
                 }
             });
 
@@ -91,12 +85,11 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MyView
         return new MyViewHolder(itemView);
     }
 
+
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-
-        singleVideo = mFavoriteList.get(position);
+        VideoItem singleVideo = mFavoriteList.get(position);
         holder.videoTitle.setText(singleVideo.getTitle());
-        //holder.videoDate.setText(singleVideo.getDate());
         Glide.with(mContext).load(singleVideo.getThumbnailUrl()).override(400,270).into(holder.thumbnail);
     }
 
@@ -104,4 +97,5 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MyView
     public int getItemCount() {
         return mFavoriteList.size();
     }
+
 }

@@ -1,7 +1,6 @@
 package io.swnomad.btsplayer;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -24,13 +24,13 @@ import io.swnomad.btsplayer.fragments.VideoFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
     Toolbar toolbar;
 
     VideoFragment muvieFragment;
     VideoFragment liveFragment;
     VideoFragment logFragment;
-
-    FavoriteFragment favoriteFragment;
+    VideoFragment favoriteFragment;
 
     DrawerLayout drawer;
 
@@ -40,11 +40,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SQLiteDatabase db = openOrCreateDatabase("favorites", MODE_ENABLE_WRITE_AHEAD_LOGGING, null);
-        String sql = "create table if not exists videos(title text, videoId text, pubDate text, thumbnailUrl text);";
-
-        db.execSQL(sql);
-        db.close();
 
         /* 액션바로 직접 만든 toolbar를 적용 */
         toolbar = findViewById(R.id.toolbar);
@@ -63,16 +58,13 @@ public class MainActivity extends AppCompatActivity
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        VideoInfoReader.load();
-
         muvieFragment = new MuvieFragment();
         liveFragment = new LiveFragment();
         logFragment = new LogFragment();
-
         favoriteFragment = new FavoriteFragment();
 
         /* 첫 번째 프래그먼트가 보이도록 설정 */
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, liveFragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, liveFragment).commit();
     }
 
     @Override
@@ -91,22 +83,32 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         TextView titleView = findViewById(R.id.titleView);
 
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
         switch(id){
             case R.id.nav_muvie:
                 titleView.setText(R.string.muvie);
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, muvieFragment).commit();
+                fragmentTransaction.replace(R.id.container, muvieFragment);
+                //fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 break;
             case R.id.nav_live:
                 titleView.setText(R.string.live);
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, liveFragment).commit();
+                fragmentTransaction.replace(R.id.container, liveFragment);
+                //fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 break;
             case R.id.nav_log:
                 titleView.setText(R.string.vlog);
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, logFragment).commit();
+                fragmentTransaction.replace(R.id.container, logFragment);
+                //fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 break;
             case R.id.nav_favorite:
                 titleView.setText(R.string.favorites);
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, favoriteFragment).commit();
+                fragmentTransaction.replace(R.id.container, favoriteFragment);
+                //fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
                 break;
             case R.id.nav_share:
                 Intent intent = new Intent(android.content.Intent.ACTION_SEND);
