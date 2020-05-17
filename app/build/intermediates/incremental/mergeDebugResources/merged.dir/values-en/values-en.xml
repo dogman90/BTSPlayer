@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="addFav">To Favorites</string>
+    <string name="app_id">ca-app-pub-5624366650986464~1516317020</string>
+    <string name="app_name">Always On BTS Player(Free)</string>
+    <string name="banner_ad_id">ca-app-pub-5624366650986464/7789510510</string>
+    <string name="delFav">Remove</string>
+    <string name="favAddMsg">Added to my favorites</string>
+    <string name="favAlreadyMsg">Already in my favorites</string>
+    <string name="favDelMsg">Deleted from my favorites</string>
+    <string name="favorites">My Favorites</string>
+    <string name="front_ad_id">ca-app-pub-5624366650986464/4971775481</string>
+    <string name="live">Live</string>
+    <string name="muvie">MV</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="nextVideo">▶ NEXT</string>
+    <string name="prevVideo">◀ PREV</string>
+    <string name="remove_ad">Remove Ads</string>
+    <string name="share">Share App</string>
+    <string name="shareAppLink">Share App Download Link</string>
+    <string name="toHome">Back To Main</string>
+    <string name="vlog">V LOG</string>
+</resources>

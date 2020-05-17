@@ -1,0 +1,186 @@
+[
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_muvie.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\fragment_muvie.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_muvie_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\muvie_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_picture_in_picture_24dp.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\ic_picture_in_picture_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_remove_ad.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\remove_ad.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bts_logo.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\bts_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_live.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\fragment_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\favorite_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recycler_item_background.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\recycler_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pause_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\pause_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_favorite.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\fragment_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_log.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\fragment_log.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_log_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\log_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_live_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\live_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pip.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\activity_pip.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_video_item_view.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\video_item_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bts_image.jpg.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\bts_image.jpg"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_app_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_repeat_all_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\repeat_all_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_pip_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\pip_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_repeat_one_button.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\repeat_one_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_next_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\next_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_share_icon.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\share_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_shape.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\card_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_previous_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\previous_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_play_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\play_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\layout_favorite_item_view.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\layout\\favorite_item_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_repeat_one_icon.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\repeat_one_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_shape.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable\\circle_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nobbaggu\\workspace\\BTSPlayer\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    }
+]
